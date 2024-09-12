@@ -30,5 +30,10 @@ function getRandomAlphabet(){
 function setBackgroundColor(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-300');
-    console.log(element);
+    //console.log(element);
+}
+
+function removeBackgroundColor(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-300');
 }

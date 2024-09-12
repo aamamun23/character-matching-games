@@ -69,10 +69,10 @@
 
              <div class="like-score flex justify-between">
                 <div class="like bg-purple-400 p-2 rounded-3xl text-sm text-white w-[100px] flex justify-center items-center">
-                    <span>Like</span> <img class="w-[16px] mx-1" src="images/love.svg" alt=""> <span>1</span> 
+                    <span>Like</span> <img class="w-[16px] mx-1" src="images/love.svg" alt=""> <span id="life">5</span> 
                 </div>
                 <div class="score bg-purple-600 p-2 rounded-3xl text-sm text-white w-[100px] flex justify-center items-center">
-                    <span>Score</span> <img class="w-[16px] mx-1" src="images/dollar.svg" alt=""> <span>1</span> 
+                    <span>Score</span> <img class="w-[16px] mx-1" src="images/dollar.svg" alt=""> <span id="score">0</span> 
                 </div>
              </div>
 
@@ -84,8 +84,9 @@
 
         <!-- Score Screen  -->
         <div id="score-screen" class="score-screen text-center text-white bg-purple-600 py-5 px-8 shadow-md rounded-xl hidden">
-            <h1 class="text-4xl poppins-bold">Score: 14</h1>
-            <button class="btn btn-sm my-4">Play Again</button>
+            <h4>Game Over!</h4>
+            <h1 class="text-6xl poppins-bold">Score: <span id="final-score">0</span></h1>
+            <button onclick="play()" class="btn btn-sm my-4">Play Again</button>
             <p>Practice will make you pro</p>
         </div>
 
